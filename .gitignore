@@ -19,3 +19,9 @@ nbproject/*
 *.swp
 *.DS_Store
 *.lock
+
+# IntelliJ IDEA
+
+/.idea/
+
+*.iml
