@@ -1,0 +1,59 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20% auto 20%;
+    grid-template-areas: "header  header  header"
+                         "table-1 table-2 amounts"
+                         "buttons buttons buttons";
+}
+.container .header{
+    grid-area: header;
+    align-self: stretch;
+    justify-self: stretch;
+}
+.container .table-bills-1{
+    grid-area: table-1;
+    align-self: center;
+    justify-self: center;
+}
+.container .table-bills-2{
+    grid-area: table-2;
+    align-self: center;
+    justify-self: center;
+}
+.container .amounts{
+    grid-area: amounts;
+    align-self: center;
+    justify-self: center;
+}
+.container .buttons{
+    grid-area: buttons;
+    align-self: center;
+    justify-self: center;
+}
+.table-bills-1{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+    align-content: space-evenly;
+    justify-content: space-evenly;
+}
+.table-bills-1 *{
+    align-self: center;
+    justify-self: center;
+}
+.table-bills-2{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+    align-content: space-evenly;
+    justify-content: space-evenly;
+}
+.table-bills-2 *{
+    align-self: center;
+    justify-self: center;
+}
